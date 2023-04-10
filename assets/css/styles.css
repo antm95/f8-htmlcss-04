@@ -1,0 +1,25 @@
+* {
+    /* Box Model */
+    box-sizing: border-box;
+}
+html {
+    /* Text */
+    font-size: 62.5%;
+}
+body {
+    /* Text */
+    font: 1.6rem "Poppins", sans-serif;
+}
+h1,
+h2,
+h3 {
+    /* Text */
+    font-family: "Sora", sans-serif;
+}
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
