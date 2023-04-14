@@ -642,8 +642,8 @@ button {
     /* Positioning */
     position: relative;
     /* Flexbox Model */
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
+    column-gap: 56px;
     align-items: center;
 }
 .about-tab__list::after,
@@ -695,7 +695,6 @@ button {
     font-family: "Sora", sans-serif;
     font-weight: 600;
     font-size: 1.8rem;
-    line-height: 1;
 }
 .about-tab__contents {
     /* Box Model */
