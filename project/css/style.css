@@ -741,6 +741,8 @@ button {
     margin-top: 133px;
     /* Color */
     background-color: #fff6ed;
+    /* Animation */
+    scroll-margin-top: 74px;
 }
 .service__desc {
     /* Box Model */
@@ -1019,6 +1021,203 @@ button {
     /* Variable */
     --min-width-btn: 193px;
 }
-
 /* ===== ===== ===== */
-/* ++++++++++++++++  */
+
+/* ===== Pricing ===== */
+.pricing {
+    /* Box Model */
+    padding: 86px 0;
+    /* Color */
+    background-color: #fff6ed;
+}
+.pricing__container {
+    /* Box Model */
+    width: 994px;
+}
+.pricing__heading,
+.pricing__desc {
+    /* Text */
+    text-align: center;
+}
+.pricing__desc {
+    /* Box Model */
+    width: 710px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pricing__switch-wrap {
+    /* Flexbox Model */
+    display: flex;
+    justify-content: center;
+    /* Box Model */
+    margin-top: 38px;
+}
+.pricing__switch-inner {
+    /* Positioning */
+    position: relative;
+}
+.pricing__switch-label {
+    /* Positioning */
+    position: relative;
+    /* Flexbox Model */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Box Model */
+    width: 276px;
+    height: 56px;
+    padding: 0 40px;
+    border-radius: 99px;
+    border: 1px solid;
+    /* Color */
+    border-color: rgba(255, 91, 46, 0.6);
+    /* Other */
+    cursor: pointer;
+    user-select: none;
+}
+.pricing__switch-label::before {
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Box Model */
+    content: "";
+    width: 144px;
+    height: 100%;
+    border-radius: inherit;
+    /* Color */
+    background-color: #ff5b2e;
+}
+.pricing__switch-value {
+    /* Positioning */
+    position: relative;
+    z-index: 1;
+    /* Color */
+    color: #fff;
+    /* Text */
+    font-weight: 500;
+}
+.pricing__switch-input:checked + .pricing__switch-label::before {
+    /* Positioning */
+    left: auto;
+    right: 0;
+    /* Box Model */
+    width: 131px;
+}
+.pricing__switch-input:not(:checked)
+    + .pricing__switch-label
+    .pricing__switch-value:nth-of-type(2),
+.pricing__switch-input:checked
+    + .pricing__switch-label
+    .pricing__switch-value:nth-of-type(1) {
+    /* Color */
+    color: #ff5b2e;
+}
+.pricing__sale-off {
+    /* Positioning */
+    position: absolute;
+    top: -15px;
+    right: -112px;
+}
+/* Pricing List */
+.pricing__list {
+    /* Grid Layout Model */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 44px;
+    /* Box Model */
+    margin-top: 56px;
+}
+.pricing-item {
+    /* Box Model */
+    width: 100%;
+    padding: 30px 28px;
+    border-radius: 20px;
+    /* Color */
+    background-color: #fff;
+    /* Animator */
+    transition: 0.3s;
+}
+.pricing-item:hover {
+    /* Color */
+    box-shadow: 0px 20px 44px rgba(195, 108, 22, 0.06);
+}
+.pricing-item__type {
+    /* Color */
+    color: #ff5b2e;
+    /* Text */
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.pricing-item__heading {
+    /* Box Model */
+    margin-top: 8px;
+    /* Color */
+    color: #3f4065;
+    /* Text */
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.pricing-item__price {
+    /* Box Model */
+    display: block;
+    margin-top: 24px;
+    /* Color */
+    color: #000958;
+    /* Text */
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 3.3rem;
+}
+.pricing-item__btn {
+    /* Variable */
+    --min-width-btn: 100%;
+    --height-btn: 44px;
+    /* Box Model */
+    margin-top: 22px;
+}
+.pricing-item__list {
+    /* Flexbox Model */
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+    /* Box Model */
+    padding-bottom: 13px;
+    margin-top: 24px;
+    margin-left: 26px;
+}
+.pricing-item__item {
+    /* Positioning */
+    position: relative;
+    /* Color */
+    color: #656689;
+    /* Text */
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+.pricing-item__item::before {
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    left: -26px;
+    /* Box Model */
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 6px;
+    border: 1px solid;
+    border-top: none;
+    border-right: none;
+    /* Color */
+    border-color: #ff5b2e;
+    opacity: 0.4;
+    /* Transform */
+    rotate: -45deg;
+}
+.pricing-item__item--active::before {
+    /* Color */
+    opacity: 1;
+}
+/* ===== ======= ===== */
+/* ++++++++++++++++  */ ;
