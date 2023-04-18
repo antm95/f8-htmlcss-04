@@ -1224,7 +1224,7 @@ button {
 /* ===== Review ===== */
 .review {
     /* Box Model */
-    padding-top: 53px;
+    padding: 53px 0;
     /* Animation */
     scroll-margin-top: 74px;
 }
@@ -1370,4 +1370,101 @@ button {
     background-color: #ff5b2e;
 }
 /* ===== ====== ===== */
+
+/* ===== Blog ===== */
+.blog {
+    /* Box Model */
+    padding-top: 77px;
+}
+/* Blog Top */
+.blog__top {
+    /* Flexbox Model */
+    display: flex;
+    column-gap: 512px;
+    align-items: center;
+}
+.blog__desc {
+    /* Box Model */
+    width: 350px;
+    margin-top: 0;
+}
+.blog__btn {
+    /* Variable */
+    --min-width-btn: 182px;
+    /* Box Model */
+    margin-top: 24px;
+}
+.blog__btn:hover {
+    /* Color */
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+/* Blog List */
+.blog__list {
+    /* Grid Layout Model */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+    /* Box Model */
+    margin-top: 54px;
+}
+.blog-item__img-wrap {
+    /* Box Model */
+    padding: 24px 0 0 36px;
+    border-radius: 24px 24px 0 24px;
+    /* Color */
+    background-color: #90ccff;
+}
+.blog-item:nth-child(2) .blog-item__img-wrap {
+    /* Color */
+    background-color: #ff997e;
+}
+.blog-item:nth-child(3) .blog-item__img-wrap {
+    /* Color */
+    background-color: #5bd6e2;
+}
+.blog-item__time {
+    /* Color */
+    color: #fff;
+    /* Text */
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+.blog-item__img-link {
+    /* Box Model */
+    display: block;
+    width: 100%;
+    height: 296px;
+    margin-top: 25px;
+}
+.blog-item__img {
+    /* Box Model */
+    width: 100%;
+    height: 100%;
+    /* Resize */
+    object-fit: cover;
+}
+.blog-item__info {
+    /* Box Model */
+    padding-top: 28px;
+}
+.blog-item__title {
+    /* Color */
+    color: #000958;
+    /* Text */
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1.55;
+}
+.blog-item__desc {
+    /* Box Model */
+    margin-top: 16px;
+    /* Color */
+    color: #656689;
+    /* Text */
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.71;
+}
+/* ===== ==== ===== */
 /* ++++++++++++++++  */
